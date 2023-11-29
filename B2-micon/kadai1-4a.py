@@ -4,7 +4,6 @@ from uiflow import *
 import time
 import unit
 
-
 setScreenColor(0x000000)
 dual_button_0 = unit.get(unit.DUAL_BUTTON, unit.PORTB)
 
