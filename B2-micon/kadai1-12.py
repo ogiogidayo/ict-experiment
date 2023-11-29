@@ -6,7 +6,7 @@ import unit
 
 setScreenColor(0x000000)
 dual_button_1 = unit.get(unit.DUAL_BUTTON, unit.PORTA)
-label1 = M5TextBox(147, 112, "PIR", lcd.FONT_Default, 0xffffff, rotate=0)
+label1 = M5TextBox(147, 112, "Hello", lcd.FONT_Default, 0xffffff, rotate=0)
 
 def btnBlue1_wasPressed():
   label1.setText('Touched')
