@@ -1,5 +1,5 @@
 # ICT Experiment
-Information and Communication Engineering Laboratory
+Information and Communication Engineering Experiment
 
 ## B2 Micon
 The code for experiments with m5-stack is stored in the repository.  
