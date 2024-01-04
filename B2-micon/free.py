@@ -36,7 +36,7 @@ def get_news():
   label4.setText('access...')
   try:
     headers = {
-      'X-Api-Key': '0d2e386704d2432d9bf1465fa9391a10',
+      'X-Api-Key': '[API_Key]',
       'User-Agent': 'Macbook'
     }
     url ='https://newsapi.org/v2/everything?q=EC2&sortBy=publishedAt&pageSize=1'
@@ -54,7 +54,7 @@ def get_weather():
   global data
   label3.setText('accsess...')
   try:
-    req = urequests.request(method='GET', url='http://api.openweathermap.org/data/2.5/weather?q=gunma&appid=bb2d92d48fdded5f905b4551b371c69c')
+    req = urequests.request(method='GET', url='http://api.openweathermap.org/data/2.5/weather?q=gunma&appid=[API_Key]')
     data = json.loads((req.text))
     label3.setText(str((data['weather'])[-1]['main']))
     label6.setText(str(int((data['main'])['temp']-273))+"\u00B0C")

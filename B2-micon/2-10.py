@@ -18,7 +18,7 @@ label0 = M5TextBox(139, 106, "label0", lcd.FONT_Default, 0xFFFFFF, rotate=0)
 def post(message):
   label0.setText('access...')
   try:
-    req = urequests.request(method='POST', url='https://maker.ifttt.com/trigger/hoge/with/key/XAuoUVZUPth7sTFXseqYX',json={'value1':message})
+    req = urequests.request(method='POST', url='https://maker.ifttt.com/trigger/hoge/with/key/[API_Key]}',json={'value1':message})
     label0.setText('Sucsess')
     gc.collect()
     req.close()
